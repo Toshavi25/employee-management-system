@@ -1,0 +1,119 @@
+/* -------------------------------
+   Global Styles and Reset
+---------------------------------- */
+:root {
+  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+  font-weight: 400;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #242424;
+}
+
+body, html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #f8f9fa;
+}
+
+/* -------------------------------
+   Theme Light Preference
+---------------------------------- */
+@media (prefers-color-scheme: light) {
+  :root {
+    color: #213547;
+    background-color: #ffffff;
+  }
+  a:hover {
+    color: #747bff;
+  }
+  button {
+    background-color: #f9f9f9;
+  }
+}
+
+/* -------------------------------
+  Layout
+---------------------------------- */
+#root {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+/* Ensure content fills space between sticky header & footer */
+main {
+  flex: 1;
+}
+
+/* -------------------------------
+  Header (Sticky)
+---------------------------------- */
+header {
+  position: sticky;
+  top: 0;
+  z-index: 1030; /* stays above other content */
+}
+
+/* -------------------------------
+   Footer
+---------------------------------- */
+.footer {
+  background-color: #212529;
+  color: white;
+  padding: 1rem 0;
+  text-align: center;
+  border-top: 1px solid #dee2e6;
+}
+
+/* -------------------------------
+   Tables
+---------------------------------- */
+tr:hover {
+  background-color: #f2f2f2;
+  cursor: pointer;
+}
+
+/* -------------------------------
+   Buttons
+---------------------------------- */
+button {
+  border-radius: 8px;
+  border: 1px solid transparent;
+  padding: 0.6em 1.2em;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: inherit;
+  background-color: #1a1a1a;
+  cursor: pointer;
+  transition: border-color 0.25s;
+}
+
+button:hover {
+  border-color: #646cff;
+}
+
+button:focus,
+button:focus-visible {
+  outline: 4px auto -webkit-focus-ring-color;
+}
+
+/* -------------------------------
+   Links
+---------------------------------- */
+a {
+  font-weight: 500;
+  color: #646cff;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #535bf2;
+}
