@@ -1,0 +1,21 @@
+# Node.js
+frontend/node_modules/
+frontend/build/
+
+# Java (Maven/Gradle)
+backend/target/
+backend/.classpath
+backend/.project
+backend/.settings/
+
+# OS/System files
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+
+# IDE
+*.iml
+.idea/
+.vscode/
